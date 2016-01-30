@@ -4,20 +4,22 @@ Barebones Docket Volume Plugin
 This is a simple example of a docker volume plugin. This requires a working
 installation of go to build.
 
-To build (on a linux system running docker)
+To get and install
 
-    go install
+    go get github.com/bloomapi/barebones
 
 To run (on a linux system running docker)
 
+    # via the source
     go run main.go
 
-    # or after building
-
+    # or the binary
     $GOPATH/bin/barebones
 
-If you are working on a Mac, you can use the gox cross compiler
+If you are working on a Mac, you can use the gox cross compiler to prepare
+the plugin for a machine running docker.
 
+    cd $GOPATH/src/github.com/bloomapi/barebones
     go get github.com/mitchellh/gox
     gox -osarch="linux/amd64"
 
