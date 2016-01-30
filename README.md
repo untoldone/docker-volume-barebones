@@ -1,4 +1,4 @@
-Barebones Docket Volume Plugin
+Barebones Docker Volume Plugin
 ==============================
 
 This is a simple example of a docker volume plugin. This requires a working
